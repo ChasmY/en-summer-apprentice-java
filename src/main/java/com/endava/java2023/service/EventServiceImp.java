@@ -1,18 +1,17 @@
 package com.endava.java2023.service;
 
-import com.endava.java2023.repository.EventsRepository;
-import com.endava.java2023.repository.model.Events;
+import com.endava.java2023.repository.EventRepository;
 import com.endava.java2023.service.mapper.EventToEventDtoMapper;
 import com.endava.java2023.service.modelDTO.EventDto;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class EventsServiceImp implements EventsService{
+public class EventServiceImp implements EventService {
 
-    private EventsRepository eventsRepository;
+    private EventRepository eventsRepository;
 
-    public EventsServiceImp(EventsRepository eventsRepo){
+    public EventServiceImp(EventRepository eventsRepo){
         this.eventsRepository = eventsRepo;
         System.out.println(eventsRepository);
         System.out.println("Creating event service");
@@ -21,6 +20,7 @@ public class EventsServiceImp implements EventsService{
 
     @Override
     public EventDto getEvent(int eventId) {
+
         return EventToEventDtoMapper.convert(eventsRepository.getEvent(eventId));
     }
 

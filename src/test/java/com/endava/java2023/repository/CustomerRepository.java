@@ -14,8 +14,8 @@ public class CustomerRepository {
     public CustomerRepository(){
         System.out.println("Creating AccountRepo");
         customers = new ArrayList<>();
-        customers.add(new Customer(123));
-        customers.add(new Customer(124));
+        customers.add(new Customer(123, "a", "31232"));
+        customers.add(new Customer(124, "b", "eaqwe"));
     }
     public List<Customer> getCustomers(){
         return customers;

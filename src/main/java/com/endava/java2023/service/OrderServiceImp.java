@@ -4,18 +4,24 @@ import com.endava.java2023.repository.OrderRepository;
 import com.endava.java2023.repository.modelDBO.Order;
 import com.endava.java2023.service.mapper.OrderToOrderDtoMapper;
 import com.endava.java2023.service.modelDTO.OrderDto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+@Service
 public class OrderServiceImp implements OrderService{
 
     private OrderRepository orderRepository;
 
+
+    @Autowired
     public OrderServiceImp(OrderRepository orderRepo){
         this.orderRepository = orderRepo;
         System.out.println(orderRepo);
-        System.out.println("Creating order servce");
+        System.out.println("Creating order service");
     }
 
     @Override

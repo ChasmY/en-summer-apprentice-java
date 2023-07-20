@@ -2,11 +2,13 @@ package com.endava.java2023.service.modelDTO;
 
 import com.endava.java2023.repository.modelDBO.EventType;
 import com.endava.java2023.repository.modelDBO.Venue;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.Map;
 
+@JsonSerialize
 public class EventDto {
     private int id;
 
@@ -94,4 +96,6 @@ public class EventDto {
     }
 
     //de lucrat pe mai tarziu la constructor il intrebam pe daniel in alta zi
+
+    public EventDto(){}
 }

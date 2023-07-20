@@ -1,5 +1,6 @@
 package com.endava.java2023.repository.modelDBO;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -13,8 +14,9 @@ public class TicketCategory implements Serializable {
     private int ticketCategoryId;
 
 
-    @ManyToOne
-    @JoinColumn(name = "eventId", referencedColumnName = "id")
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JsonManagedReference
+    @JoinColumn(name = "eventId")
     private Event eventId;
 
     @Column(name = "description")

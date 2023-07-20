@@ -2,10 +2,11 @@ package com.endava.java2023.service.modelDTO;
 
 import com.endava.java2023.repository.modelDBO.Customer;
 import com.endava.java2023.repository.modelDBO.TicketCategory;
-import jakarta.persistence.*;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import java.time.LocalDateTime;
 
+@JsonSerialize
 public class OrderDto {
 
 
@@ -80,4 +81,6 @@ public class OrderDto {
         this.orderedAt = orderedAt;
         this.totalPrice = totalPrice;
     }
+
+    public OrderDto(){}
 }

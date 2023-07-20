@@ -24,3 +24,4 @@ public class EventType implements Serializable{
 
     public EventType(){}
 }
+

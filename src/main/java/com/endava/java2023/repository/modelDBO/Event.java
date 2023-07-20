@@ -1,5 +1,6 @@
 package com.endava.java2023.repository.modelDBO;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -13,12 +14,14 @@ public class Event implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer eventId;
 
-    @ManyToOne
-    @JoinColumn(name = "venueId", referencedColumnName = "id")
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JsonManagedReference
+    @JoinColumn(name = "venueId")
     private Venue venue;
 
-    @ManyToOne
-    @JoinColumn(name = "eventTypeId", referencedColumnName = "id")
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JsonManagedReference
+    @JoinColumn(name = "eventTypeId")
     private EventType eventType;
 
     @Column(name = "name")

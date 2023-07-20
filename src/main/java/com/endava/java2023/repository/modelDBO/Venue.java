@@ -1,5 +1,6 @@
 package com.endava.java2023.repository.modelDBO;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.io.Serializable;

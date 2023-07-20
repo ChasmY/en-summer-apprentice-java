@@ -62,5 +62,35 @@ public class Event implements Serializable{
         return description;
     }
 
+    public void setEventId(Integer eventId) {
+        this.eventId = eventId;
+    }
+
+    public void setVenue(Venue venue) {
+        this.venue = venue;
+    }
+
+    public void setEventType(EventType eventType) {
+        this.eventType = eventType;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStartDate(LocalDateTime startDate) {
+        this.startDate = startDate;
+    }
+
+    public void setEndDate(LocalDateTime endDate) {
+        this.endDate = endDate;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public Event(){}
+
+
 }

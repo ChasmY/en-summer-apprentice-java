@@ -84,7 +84,7 @@ public class EventDto {
         this.description = description;
     }
 
-    public EventDto(int id, Venue venue, EventType eventType, String name, LocalDateTime startDate
+    public EventDto (int id, Venue venue, EventType eventType, String name, LocalDateTime startDate
             , LocalDateTime endDate, String description) {
         this.id = id;
         this.venue = venue;
@@ -97,5 +97,4 @@ public class EventDto {
 
     //de lucrat pe mai tarziu la constructor il intrebam pe daniel in alta zi
 
-    public EventDto(){}
 }

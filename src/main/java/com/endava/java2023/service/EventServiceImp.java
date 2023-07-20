@@ -23,13 +23,13 @@ public class EventServiceImp implements EventService {
     }
 
 
-    @Override
-    public EventDto getEvent(int eventId) {
-        return EventToEventDtoMapper.convert(eventsRepository.getEvent(eventId));
-    }
+//    @Override
+//    public EventDto getEvent(String name) {
+//        return EventToEventDtoMapper.convert(eventsRepository.findAll(name));
+//    }
 
     @Override
     public List<EventDto> getEvents() {
-        return eventsRepository.getEvents().stream().map(EventToEventDtoMapper::convert).collect(Collectors.toList());
+        return eventsRepository.findAll().stream().map(EventToEventDtoMapper::convert).collect(Collectors.toList());
     }
 }

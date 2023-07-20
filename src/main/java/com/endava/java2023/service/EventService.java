@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface EventService {
 
-    public EventDto getEvent(int eventId);
+//    public EventDto getEvent(String name);
     public List<EventDto> getEvents();
 }

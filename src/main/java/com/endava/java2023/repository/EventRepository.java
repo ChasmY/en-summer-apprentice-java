@@ -12,5 +12,11 @@ import java.util.Optional;
 
 @Repository
 public interface EventRepository extends JpaRepository<Event, Long> {
+    public Event findByEventName(String name);
+
+    public Event findByEventType_name(String name);
+    
+    public List<Event> findAllByVenue_IdAndEventType_Name(int venueId, String name);
+    public List<Event> findAll();
 
 }

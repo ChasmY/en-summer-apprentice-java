@@ -6,9 +6,13 @@ import com.endava.java2023.service.modelDTO.OrderDto;
 public class OrderToOrderDtoMapper {
 
     public static OrderDto convert(Order order){
-
-        return new OrderDto(order.getOrderId(), order.getCustomerId(), order.getTicketCategoryId(), order.getNumberOfTickets()
-        ,order.getOrderedAt(), order.getTotalPrice());
+        return new OrderDto(
+                order.getTicketCategoryId().getEventId().getEventId(),
+                order.getOrderedAt(),
+                order.getTicketCategoryId().getTicketCategoryId(),
+                order.getNumberOfTickets(),
+                order.getTotalPrice()
+        );
     }
 
 }

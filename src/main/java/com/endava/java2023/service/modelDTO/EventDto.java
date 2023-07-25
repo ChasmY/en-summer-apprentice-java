@@ -3,10 +3,8 @@ package com.endava.java2023.service.modelDTO;
 import com.endava.java2023.repository.modelDBO.EventType;
 import com.endava.java2023.repository.modelDBO.Venue;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
-import java.util.Map;
 
 @JsonSerialize
 public class EventDto {
@@ -16,15 +14,11 @@ public class EventDto {
 
     private EventType eventType;
 
-
-    private String name;
-
+    private String eventName;
 
     private LocalDateTime startDate;
 
-
     private LocalDateTime endDate;
-
 
     private String description;
 
@@ -52,12 +46,12 @@ public class EventDto {
         this.eventType = eventType;
     }
 
-    public String getName() {
-        return name;
+    public String getEventName() {
+        return eventName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
     }
 
     public LocalDateTime getStartDate() {
@@ -84,12 +78,12 @@ public class EventDto {
         this.description = description;
     }
 
-    public EventDto (int id, Venue venue, EventType eventType, String name, LocalDateTime startDate
+    public EventDto (int id, Venue venue, EventType eventType, String eventName, LocalDateTime startDate
             , LocalDateTime endDate, String description) {
         this.id = id;
         this.venue = venue;
         this.eventType = eventType;
-        this.name = name;
+        this.eventName = eventName;
         this.startDate = startDate;
         this.endDate = endDate;
         this.description = description;

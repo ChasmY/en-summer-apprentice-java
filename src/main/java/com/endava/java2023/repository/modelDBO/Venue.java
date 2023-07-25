@@ -1,6 +1,5 @@
 package com.endava.java2023.repository.modelDBO;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 import java.io.Serializable;
@@ -11,7 +10,7 @@ public class Venue implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int venueId;
+    private int id;
 
     @Column(name = "location")
     private String location;
@@ -22,8 +21,8 @@ public class Venue implements Serializable {
     @Column(name = "capacity")
     private int capacity;
 
-    public int getVenueId() {
-        return venueId;
+    public int getId() {
+        return id;
     }
 
     public String getLocation() {

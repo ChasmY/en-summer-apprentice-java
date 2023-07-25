@@ -5,8 +5,9 @@ import com.endava.java2023.service.modelDTO.EventDto;
 
 public class EventToEventDtoMapper {
 
+
     public static EventDto convert(Event event){
-        return new EventDto(event.getEventId(),event.getVenue(), event.getEventTypeId(),event.getName()
+        return new EventDto(event.getEventId(),event.getVenue(), event.getEventTypeId(),event.getEventName()
         ,event.getStartDate(), event.getEndDate(), event.getDescription());
 
     }

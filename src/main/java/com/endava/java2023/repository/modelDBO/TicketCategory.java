@@ -6,12 +6,12 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "TicketCategorys")
+@Table(name = "TicketCategory")
 public class TicketCategory implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int ticketCategoryId;
+    private int id;
 
 
     @ManyToOne(fetch=FetchType.LAZY)
@@ -25,8 +25,8 @@ public class TicketCategory implements Serializable {
     @Column(name = "price")
     private float price;
 
-    public int getTicketCategoryId() {
-        return ticketCategoryId;
+    public Integer getTicketCategoryId() {
+        return id;
     }
 
     public Event getEventId() {

@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "EventTypes")
+@Table(name = "EventType")
 public class EventType implements Serializable{
 
     @Id

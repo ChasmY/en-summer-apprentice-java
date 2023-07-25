@@ -14,18 +14,18 @@ public class Event implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer eventId;
 
-    @ManyToOne(fetch=FetchType.LAZY)
+    @ManyToOne(fetch=FetchType.EAGER)
     @JsonManagedReference
     @JoinColumn(name = "venueId")
     private Venue venue;
 
-    @ManyToOne(fetch=FetchType.LAZY)
+    @ManyToOne(fetch=FetchType.EAGER)
     @JsonManagedReference
     @JoinColumn(name = "eventTypeId")
     private EventType eventType;
 
     @Column(name = "name")
-    private String name;
+    private String eventName;
 
     @Column(name = "startDate")
     private LocalDateTime startDate;
@@ -46,8 +46,8 @@ public class Event implements Serializable{
         return eventType;
     }
 
-    public String getName() {
-        return name;
+    public String getEventName() {
+        return eventName;
     }
 
     public LocalDateTime getStartDate() {
@@ -74,8 +74,8 @@ public class Event implements Serializable{
         this.eventType = eventType;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
     }
 
     public void setStartDate(LocalDateTime startDate) {
@@ -89,6 +89,8 @@ public class Event implements Serializable{
     public void setDescription(String description) {
         this.description = description;
     }
+
+
 
     public Event(){}
 

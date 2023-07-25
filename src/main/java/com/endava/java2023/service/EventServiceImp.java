@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
 @Service
 public class EventServiceImp implements EventService {
 
+    @Autowired
     private EventRepository eventsRepository;
 
 
@@ -23,13 +24,21 @@ public class EventServiceImp implements EventService {
     }
 
 
-//    @Override
-//    public EventDto getEvent(String name) {
-//        return EventToEventDtoMapper.convert(eventsRepository.findAll(name));
-//    }
+    @Override
+    public EventDto getEvent(String name) {
+         return EventToEventDtoMapper.convert(eventsRepository.findByEventName(name));
+
+    }
 
     @Override
     public List<EventDto> getEvents() {
         return eventsRepository.findAll().stream().map(EventToEventDtoMapper::convert).collect(Collectors.toList());
     }
+
+    @Override
+    public List<EventDto> getEventByVenueIdAndEventType(int venueId, String name) {
+        return eventsRepository.findAllByVenue_IdAndEventType_Name(venueId, name).stream().map(EventToEventDtoMapper::convert).collect(Collectors.toList());
+    }
+
+
 }

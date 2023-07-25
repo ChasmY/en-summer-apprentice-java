@@ -5,12 +5,12 @@ import java.io.Serializable;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Customers")
+@Table(name = "Customer")
 public class Customer implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "customerId")
     private int customerId;
 
     @Column(name = "name")

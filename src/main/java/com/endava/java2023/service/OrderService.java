@@ -13,6 +13,4 @@ public interface OrderService {
     public List<OrderDto> getOrders();
 
     public OrderDto postOrder(NewOrder newOrder);
-    public OrderDto createOrder(OrderDto orderDto);
-
 }

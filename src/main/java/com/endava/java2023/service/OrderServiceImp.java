@@ -47,50 +47,13 @@ public class OrderServiceImp implements OrderService{
     }
 
     @Override
-    public OrderDto postOrder(NewOrder newOrder){
-          LocalDateTime localDateTime = LocalDateTime.now();
-          TicketCategory ticketCategory = ticketCategoryRepository.
-                  findById(newOrder.getTicketCategoryId()).get();
-          Customer customer = customerRepository.findById(1L).get();
-          Order order = new Order(localDateTime, newOrder.getNumberOfTickets(),
-                  newOrder.getNumberOfTickets() * ticketCategory.getPrice(),customer, ticketCategory);
-
-          Order savedOrder = order;
-          return OrderToOrderDtoMapper.convert(savedOrder);
-    }
-
-    @Override
-    public OrderDto createOrder(OrderDto orderDto) {
-        Customer customer = customerRepository.findById(2L).orElse(null);
-
-
-        if (customer == null) {
-
-            throw new RuntimeException("Customer not found");
-        }
-
-        TicketCategory ticketCategory = ticketCategoryRepository.findById((long)
-                orderDto.getTicketCategory()).orElse(null);
-
-
-        if (ticketCategory == null) {
-
-            throw new RuntimeException("TicketCategory not found");
-        }
-
-
-        Order order = new Order();
-        order.setCustomer(customer);
-        order.setTicketCategory(ticketCategory);
-        order.setNumberOfTickets(orderDto.getNumberOfTickets());
-        double ticketPrice = ticketCategory.getPrice();
-        double totalPrice = ticketPrice * orderDto.getNumberOfTickets();
-        order.setTotalPrice((float) totalPrice);
-
-        Order savedOrder = orderRepository.save(order);
-
-
-        return OrderToOrderDtoMapper.convert(savedOrder);
-    }
-
+    public OrderDto postOrder(NewOrder newOrder) {
+                LocalDateTime localDateTime = LocalDateTime.now();
+                TicketCategory ticketCategory = ticketCategoryRepository.
+                        findById(newOrder.getTicketCategoryId()).get();
+                Customer customer = customerRepository.findById(1L).get();
+                Order order = new Order(localDateTime, newOrder.getNumberOfTickets(),
+                        newOrder.getNumberOfTickets() * ticketCategory.getPrice(), customer, ticketCategory);
+                return OrderToOrderDtoMapper.convert(order);
+            }
 }

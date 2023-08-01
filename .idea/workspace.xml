@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee5aa10b-883d-434f-8724-ae407533fd1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/EventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/EventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/modelDBO/NewOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/modelDBO/NewOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/modelDBO/TicketCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/modelDBO/TicketCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/modelDBO/Venue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/repository/modelDBO/Venue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/service/EventServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/service/EventServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/service/OrderServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/service/OrderServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/endava/java2023/service/modelDTO/EventDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/endava/java2023/service/modelDTO/EventDto.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Sk8DEqjKLqW5kobhctJWtfdUh3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;structura&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/Facultate/An II/Sem2/Practica/Endava/en-summer-apprentice-java/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Facultate/An II/Sem1/MAP/CasinoDB&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.haulmont.jpb.viewMode&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ea7dd7852ad2a1554e283c93e755a7e9&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;,
+      &quot;sqlserver&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.endava.java2023.controller" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Java2023Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="java2023" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.endava.java2023.Java2023Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee5aa10b-883d-434f-8724-ae407533fd1e" name="Changes" comment="" />
+      <created>1689679101151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689679101151</updated>
+      <workItem from="1689679101558" duration="3997000" />
+      <workItem from="1689685931506" duration="4030000" />
+      <workItem from="1689690136723" duration="835000" />
+      <workItem from="1689710283476" duration="2279000" />
+      <workItem from="1689760433142" duration="4215000" />
+      <workItem from="1689766656753" duration="156000" />
+      <workItem from="1689767535999" duration="890000" />
+      <workItem from="1689768626093" duration="2938000" />
+      <workItem from="1689771595403" duration="176000" />
+      <workItem from="1689771814257" duration="13868000" />
+      <workItem from="1689845947061" duration="8227000" />
+      <workItem from="1689859356330" duration="7516000" />
+      <workItem from="1689867022296" duration="59000" />
+      <workItem from="1690275168206" duration="8153000" />
+      <workItem from="1690287133242" duration="12784000" />
+      <workItem from="1690300299752" duration="199000" />
+      <workItem from="1690300600957" duration="302000" />
+      <workItem from="1690364273198" duration="4000" />
+      <workItem from="1690377437841" duration="336000" />
+      <workItem from="1690467012594" duration="543000" />
+      <workItem from="1690877628774" duration="1508000" />
+      <workItem from="1690879351425" duration="787000" />
+    </task>
+    <task id="LOCAL-00001" summary="Move from tests to main">
+      <option name="closed" value="true" />
+      <created>1689771341571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689771341571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Move from tests to main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move from tests to main" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="eventsRepository" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

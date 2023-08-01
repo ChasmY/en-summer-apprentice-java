@@ -4,6 +4,7 @@ import com.endava.java2023.repository.modelDBO.NewOrder;
 import com.endava.java2023.service.OrderService;
 import com.endava.java2023.service.modelDTO.OrderDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,7 +32,8 @@ public class OrderController {
         return orderService.getOrders();
     }
 
-    @PostMapping(value = "/poster")
+    @PostMapping(value = "/poster", produces = {"application/json"},
+            consumes = {"application/json"})
     public OrderDto postOrder(@RequestBody NewOrder newOrder){
         System.out.println("Executing post..");
         return orderService.postOrder(newOrder);

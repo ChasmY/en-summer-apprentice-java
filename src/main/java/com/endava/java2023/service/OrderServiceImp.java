@@ -49,9 +49,12 @@ public class OrderServiceImp implements OrderService{
     @Override
     public OrderDto postOrder(NewOrder newOrder) {
                 LocalDateTime localDateTime = LocalDateTime.now();
+                Customer customer = customerRepository.getCustomer(1);
                 TicketCategory ticketCategory = ticketCategoryRepository.
                         findById(newOrder.getTicketCategoryId()).get();
-                Customer customer = customerRepository.findById(1L).get();
+
+
+
                 Order order = new Order(localDateTime, newOrder.getNumberOfTickets(),
                         newOrder.getNumberOfTickets() * ticketCategory.getPrice(), customer, ticketCategory);
                 return OrderToOrderDtoMapper.convert(order);

@@ -12,30 +12,26 @@ import java.util.Optional;
 
 
 @Repository
-public class CustomerRepository implements CrudRepository<Customer, Long> {
+public class CustomerRepository implements CrudRepository<Customer, Integer> {
     private List<Customer> customers;
 
-    public CustomerRepository(){
+    public CustomerRepository() {
         System.out.println("Creating AccountRepo");
         customers = new ArrayList<>();
     }
-    public List<Customer> getCustomers(){
+
+    public List<Customer> getCustomers() {
         return customers;
     }
 
-    public Customer getCustomer(int customerId){
-        Optional<Customer> customer = customers.stream().filter(a-> customerId == a.getCustomerId()).findFirst();
-        if(customer.isPresent()){
+    public Customer getCustomer(int customerId) {
+        Optional<Customer> customer = customers.stream().filter(a -> customerId == a.getCustomerId()).findFirst();
+        if (customer.isPresent()) {
             return customer.get();
         }
         return null;
     }
 
-    //TODO implements
-    @Override
-    public void deleteAll(){
-
-    }
     @Override
     public <S extends Customer> S save(S entity) {
         return null;
@@ -47,12 +43,12 @@ public class CustomerRepository implements CrudRepository<Customer, Long> {
     }
 
     @Override
-    public Optional<Customer> findById(Long integer) {
+    public Optional<Customer> findById(Integer integer) {
         return Optional.empty();
     }
 
     @Override
-    public boolean existsById(Long integer) {
+    public boolean existsById(Integer integer) {
         return false;
     }
 
@@ -62,7 +58,7 @@ public class CustomerRepository implements CrudRepository<Customer, Long> {
     }
 
     @Override
-    public Iterable<Customer> findAllById(Iterable<Long> integers) {
+    public Iterable<Customer> findAllById(Iterable<Integer> integers) {
         return null;
     }
 
@@ -72,10 +68,9 @@ public class CustomerRepository implements CrudRepository<Customer, Long> {
     }
 
     @Override
-    public void deleteById(Long aLong) {
+    public void deleteById(Integer integer) {
 
     }
-
 
     @Override
     public void delete(Customer entity) {
@@ -83,7 +78,7 @@ public class CustomerRepository implements CrudRepository<Customer, Long> {
     }
 
     @Override
-    public void deleteAllById(Iterable<? extends Long> integers) {
+    public void deleteAllById(Iterable<? extends Integer> integers) {
 
     }
 
@@ -91,4 +86,11 @@ public class CustomerRepository implements CrudRepository<Customer, Long> {
     public void deleteAll(Iterable<? extends Customer> entities) {
 
     }
+
+    @Override
+    public void deleteAll() {
+
+    }
+
+    //TODO implements
 }

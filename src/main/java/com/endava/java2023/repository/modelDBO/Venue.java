@@ -10,7 +10,7 @@ public class Venue implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int venueId;
 
     @Column(name = "location")
     private String location;
@@ -22,7 +22,7 @@ public class Venue implements Serializable {
     private int capacity;
 
     public int getId() {
-        return id;
+        return venueId;
     }
 
     public String getLocation() {

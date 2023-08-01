@@ -37,7 +37,7 @@ public class EventServiceImp implements EventService {
 
     @Override
     public List<EventDto> getEventByVenueIdAndEventType(int venueId, String name) {
-        return eventsRepository.findAllByVenue_IdAndEventType_Name(venueId, name).stream().map(EventToEventDtoMapper::convert).collect(Collectors.toList());
+        return eventsRepository.findEventsByVenue_VenueIdAndEventType_Name(venueId, name).stream().map(EventToEventDtoMapper::convert).collect(Collectors.toList());
     }
 
 

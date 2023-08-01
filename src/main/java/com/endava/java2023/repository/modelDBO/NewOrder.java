@@ -1,16 +1,16 @@
 package com.endava.java2023.repository.modelDBO;
 
 public class NewOrder {
-        Integer eventID;
+        Integer eventId;
         Long ticketCategoryId;
     Integer numberOfTickets;
 
         public Integer getEventID() {
-            return eventID;
+            return eventId;
         }
 
         public void setEventID(Integer eventID) {
-            this.eventID = eventID;
+            this.eventId = eventID;
         }
 
         public Long getTicketCategoryId() {
@@ -30,7 +30,7 @@ public class NewOrder {
         }
 
         public NewOrder(Integer eventID, Long ticketCategoryId, Integer numberOfTickets) {
-            this.eventID = eventID;
+            this.eventId = eventID;
             this.ticketCategoryId = ticketCategoryId;
             this.numberOfTickets = numberOfTickets;
         }

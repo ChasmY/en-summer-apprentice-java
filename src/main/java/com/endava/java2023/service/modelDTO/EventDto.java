@@ -1,6 +1,7 @@
 package com.endava.java2023.service.modelDTO;
 
 import com.endava.java2023.repository.modelDBO.EventType;
+import com.endava.java2023.repository.modelDBO.TicketCategory;
 import com.endava.java2023.repository.modelDBO.Venue;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
@@ -21,6 +22,7 @@ public class EventDto {
     private LocalDateTime endDate;
 
     private String description;
+
 
     public int getId() {
         return id;

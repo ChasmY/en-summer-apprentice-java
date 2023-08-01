@@ -11,7 +11,7 @@ public class TicketCategory implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private int TicketCategoryId;
 
 
     @ManyToOne(fetch=FetchType.LAZY)
@@ -26,7 +26,7 @@ public class TicketCategory implements Serializable {
     private float price;
 
     public Integer getTicketCategoryId() {
-        return id;
+        return TicketCategoryId;
     }
 
     public Event getEventId() {
